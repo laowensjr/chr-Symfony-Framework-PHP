@@ -1,0 +1,20 @@
+.container .jumbotron {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.jumbotron .container {
+    top: 0px;
+    padding-bottom: 0px;
+}
+.fadein {
+    position:relative; height:341px; width:739px; margin:0 auto;
+    background: url("../../bundles/chralpha/images/jumbotronAdCombined.jpg") repeat-x scroll left top transparent;
+
+}
+.fadein img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width: 739px;
+    height: 341px;
+}

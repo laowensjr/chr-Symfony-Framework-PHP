@@ -1,0 +1,21 @@
+_homepage:
+    path:     /
+    defaults: { _controller: ChrAlphaBundle:Homepage:index }
+
+
+browse:
+    path: /browse/hair/{hairtype}
+    defaults: {_controller: ChrAlphaBundle:Browse:index }
+
+browsebyinch:
+    path: /browse/hair/{hairtype}/{inch}
+    defaults: {_controller: ChrAlphaBundle:Browse:byinch }
+
+browsebyinchandstyle:
+    path: /browse/hair/{hairtype}/{inch}/{style}
+    defaults: {_controller: ChrAlphaBundle:Browse:byinchandstyle }
+
+topratedhair:
+    path: /shop/hair/topratedhair/{hairtype}
+    defaults: {_controller: ChrAlphaBundle:Browse:topratedhair }
+

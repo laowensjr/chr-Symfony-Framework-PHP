@@ -1,0 +1,153 @@
+{# src/Chr/AlphaBundle/Resources/views/Browse/index.html.twig #}
+ {% extends '::layout.html.twig' %}
+
+{% block title %}Shop Top Rated {{ hairtype | capitalize }} Hair{% endblock %}
+
+ {% block body %}
+
+     <div class="container">
+     <div class="header clearfix">
+         <nav>
+             <ul class="nav nav-pills pull-right">
+                 <li role="presentation" class="active"><a href="/">Home</a></li>
+                 <li role="presentation"><a href="#">About</a></li>
+                 <li role="presentation"><a href="#">Contact</a></li>
+             </ul>
+         </nav>
+         <a class="navbar-brand" href="/">{% image '@ChrAlphaBundle/Resources/public/images/logo.jpg' %}
+             <img alt="Brand" src="{{ asset_url }}">
+             {% endimage %}</a>
+     </div>
+
+     <!-- Main jumbotron for a primary marketing message or call to action -->
+
+     <div class="container">
+         <div class="jumbotron">
+             <div class="row">
+                 <div class="col-md-12">
+                     <h2>Shop Top Rated {{ hairtype | capitalize }} Hair</h2>
+                     <p><small>100% Virgin {{ hairtype | capitalize }} Human Hair </small>
+
+                     </p>
+                 </div>
+
+
+             </div>
+         </div>
+
+         <div class="row">
+             <div class="col-md-9">
+                 <p><i>100% Virgin {{ hairtype | capitalize }} Human Hair. When buying Top Rated {{ hairtype | capitalize }} Hair its important that you
+                         research the hair and its origin because the purchase price could be significant as compared to other hairs.100% Virgin {{ hairtype | capitalize }} Human Hair. When buying {{ hairtype | capitalize }} Hair its important that you
+                         research the hair and its origin because the purchase price could be significant as compared to others.</i></p>
+             </div>
+             <div class="col-md-3">
+
+             </div>
+
+
+         </div>
+         <hr />
+
+         <div class="row">
+             <div class="col-md-3">
+
+                 <a class="btn btn-primary" href="/shop/hair/topratedhair/{{ hairtype }}" role="button" >
+                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Shop Top-Rated {{ hairtype | capitalize }} Hair
+                 </a>
+                 <br /><br />
+                 <a class="btn btn-danger" href="/shop/hair/onsalehair/{{ hairtype }}" role="button">
+                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Shop ON SALE {{ hairtype | capitalize }} Hair
+                 </a>
+             </div><br />
+             <div class="col-md-3">
+
+                 <p><b>Ads Related to Top Rated {{ hairtype | capitalize }} Hair</b></p>
+                 <!---This is where the Adsense Ads are going to go--->
+                 <p>Electric Toothbrushes‎
+                     <a href="http://www.walmart.com/Personal_Care">www.walmart.com/Personal_Care‎</a><br />
+                     Save On Electric Toothbrushes.‎ Free Shipping Site To Store.‎‎
+                     Best Sellers‎
+                     New Arrivals‎
+                     Top Rated‎
+                     Rollback Savings‎</p>
+                 <!---End Adsense-->
+             </div>
+
+             <div class="col-md-3">
+                 <p><small>
+                         <a href="/browse/hair/{{ hairtype }}/12">12 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/12/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/12/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/12/curly">Curly</a>
+                         <br/>
+                         <a href="/browse/hair/{{ hairtype }}/14">14 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/14/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/14/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/14/curly">Curly</a>
+                         <br/>
+                         <a href="/browse/hair/{{ hairtype }}/16">16 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/16/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/16/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/16/curly">Curly</a>
+                         <br/>
+                         <a href="/browse/hair/{{ hairtype }}/18">18 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/18/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/18/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/18/curly">Curly</a>
+                         <br/>
+                         <a href="/browse/hair/{{ hairtype }}/20">20 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/20/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/20/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/20/curly">Curly</a>
+                         <br/>
+                     </small>
+                 </p>
+             </div>
+             <div class="col-md-3">
+                 <p class="text-muted">
+                     <small>
+                         <a href="/browse/hair/{{ hairtype }}/22">22 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/22/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/22/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/22/curly">Curly</a>
+                         <br/>
+                         <a href="/browse/hair/{{ hairtype }}/24">24 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/24/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/24/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/24/curly">Curly</a>
+                         <br/>
+                         <a href="/browse/hair/{{ hairtype }}/26">26 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/26/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/26/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/26/curly">Curly</a>
+                         <br/>
+                         <a href="/browse/hair/{{ hairtype }}/28">28 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/28/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/28/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/28/curly">Curly</a>
+                         <br />
+                         <a href="/browse/hair/{{ hairtype }}/30">30 Inch</a>&nbsp;&nbsp; <a class="text-muted"href="/browse/hair/{{ hairtype }}/30/straight">Straight,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/30/wavy">Wavy,</a>&nbsp;&nbsp;<a class="text-muted"href="/browse/hair/{{ hairtype }}/30/curly">Curly</a>
+                         <br/>
+                     </small>
+                 </p>
+             </div>
+         </div>
+
+
+
+
+     </div>
+     <br /><br />
+     <div class="container">
+         <!-- Example row of columns -->
+         <div class="row">
+             <div class="col-md-12">
+                 <h2>Top Rated {{ hairtype | capitalize }} Hair</h2>
+                 <hr />
+             </div>
+         </div>
+
+         <div class="row">
+             <div class="col-md-4" align="center">
+                 <h2><a href="#">Nearby Hair Stores</a></h2>
+                 <p>View the Hair Stores near you that carry:</p>
+                 <p><b>Top Rated {{ hairtype | capitalize }} Hair</b></p>
+                 <p><a class="btn btn-default" href="#" role="button">View Hair Stores &raquo;</a></p>
+                 <hr /> </div>
+
+             <div class="col-md-4" align="center">
+                 <h2><a href="#">Videos & Tutorials</a></h2>
+                 <p>View Videos and Tutorials for all:</p>
+                 <p><b>Top Rated {{ hairtype | capitalize }} Hair</b></p>
+                 <p><a class="btn btn-default" href="#" role="button">View Tutorials &raquo;</a></p>
+                 <hr /></div>
+
+             <div class="col-md-4" align="center">
+                 <h2><a href="#">Find Nearby Salons</a></h2>
+                 <p>Locate Nearby Salons that specialize in:</p>
+                 <p><b>Top Rated {{ hairtype | capitalize }} Hair</b></p>
+                 <p><a class="btn btn-default" href="#" role="button">View Salons &raquo;</a></p>
+                 <hr /></div>
+
+         </div>
+
+         <footer>
+             <p>&copy; Company 2014</p>
+         </footer>
+     </div> <!-- /container -->
+
+ {% endblock %}

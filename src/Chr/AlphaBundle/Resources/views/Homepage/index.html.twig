@@ -1,0 +1,145 @@
+{# src/Chr/AlphaBundle/Resources/views/Homepage/index.html.twig #}
+ {% extends '::layout.html.twig' %}
+
+{% block title %}Consumer Hair Reviews{% endblock %}
+
+ {% block body %}
+
+     <nav class="navbar">
+         <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="#">{% image '@ChrAlphaBundle/Resources/public/images/logo.jpg' %}
+                     <img alt="Brand" src="{{ asset_url }}">
+                     {% endimage %}</a>
+             </div>
+             <div id="navbar" class="navbar-collapse collapse">
+                 <form class="navbar-form navbar-right">
+                     <div class="form-group">
+                         <input type="text" placeholder="Email" class="form-control">
+                     </div>
+                     <div class="form-group">
+                         <input type="password" placeholder="Password" class="form-control">
+                     </div>
+                     <button type="submit" class="btn btn-primary">Sign in</button><br />
+                     <small><a href="">Don't have an Account, <b>Register for Free!</b></a></small>
+
+                 </form>
+             </div><!--/.navbar-collapse -->
+         </div>
+     </nav>
+     <!-- Main jumbotron for a primary marketing message or call to action -->
+     <div class="jumbotron">
+         <div class="container">
+             <div class="fadein" align="center">
+                 <a href="#">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined.jpg' %}
+                     <img alt="Service Locator" src="{{ asset_url }}">
+                     {% endimage %}</a>
+                 <a href="#">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined2.jpg' %}
+                     <img alt="Service Locator" src="{{ asset_url }}">
+                     {% endimage %}</a>
+                 <a href="#">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined3.jpg' %}
+                     <img alt="Service Locator" src="{{ asset_url }}">
+                     {% endimage %}</a>
+
+             </div>
+         </div>
+     </div>
+
+     <div class="container">
+         <!-- Example row of columns -->
+         <div class="row">
+             <div class="col-md-3" align="center">
+                 {% image '@ChrAlphaBundle/Resources/public/images/ServiceLocator.jpg' %}
+                 <img alt="Service Locator" src="{{ asset_url }}">
+                 {% endimage %}
+                 <h2>Service Locator</h2>
+                 <p>Find A Salon, Hair Store, or Barber in your area. </p>
+
+
+                 <p>
+                     <a href="#">Find A Salon Near You</a>
+                     <br/>
+                     <a href="#">Find A Hair Store Near You</a>
+                     <br/>
+                     <a href="#">Find A Barber Near You</a>
+
+                 </p>
+                 <br>
+                 <p><b>Attention Licensed Cosmetologists, Hair Store Owners & Barbers</b></p>
+                 <p><a class="btn btn-default" href="#" role="button">List Your Business FREE! &raquo;</a></p>
+             </div>
+             <div class="col-md-3" align="center">
+                 {% image '@ChrAlphaBundle/Resources/public/images/hair.jpg' %}
+                 <img alt="Hair and Wigs" src="{{ asset_url }}">
+                 {% endimage %}
+                 <h2>Hairs & Wigs</h2>
+                 <p>Read the Latest Hair Reviews of your favorite Hair</p>
+                 <p>
+                     <a href="browse/hair/malaysian">Malaysian</a>
+                     <br/>
+                     <a href="browse/hair/peruvian">Peruvian</a>
+                     <br/>
+                     <a href="browse/hair/brazilian">Brazilian</a>
+                     <br/>
+                     <a href="browse/hair/eurasian">Eurasian</a>
+                 </p>
+
+                 <p><a class="btn btn-default" href="#" role="button">See All Categories &raquo;</a></p>
+
+             </div>
+             <div class="col-md-3" align="center">
+                 {% image '@ChrAlphaBundle/Resources/public/images/beautyProduct.jpg' %}
+                 <img alt="Beauty Products" src="{{ asset_url }}">
+                 {% endimage %}
+                 <h2>Beauty Products</h2>
+                 <div align="left"><p>When Shopping for Beauty Products we know quality matters.
+                 </div>
+                 <p>
+                     <a href="#">Shampoos</a>
+                     <br/>
+                     <a href="#">Moisturizers</a>
+                     <br/>
+                     <a href="#">Relaxers/Perms</a>
+                     <br/>
+                     <a href="#">Hair Color</a>
+                 </p>
+                 <br/> Read the Reviews before you buy!
+                     </p>
+                 <p><a class="btn btn-default" href="#" role="button">See All Categories &raquo;</a></p>
+             </div>
+
+             <div class="col-md-3" align="center">
+                 {% image '@ChrAlphaBundle/Resources/public/images/stylingTools.jpg' %}
+                 <img alt="Styling Tools" src="{{ asset_url }}">
+                 {% endimage %}
+                 <h2>Tools & Equipment</h2>
+                 <p>Browse the Best Hair Styling Tools and Equipment</p>
+                 <p>
+                     <a href="#">Hair Dryers</a>
+                     <br/>
+                     <a href="#">Flat Irons</a>
+                     <br/>
+                     <a href="#">Curlers</a>
+                     <br/>
+                     <a href="#">Commercial Equipment</a>
+                 </p>
+                 <p><a class="btn btn-default" href="#" role="button">See All Categories &raquo;</a></p>
+             </div>
+         </div>
+     <div class="col-md-12" align="center" style="background-color: #eeeeee">
+
+         </div>
+         <hr>
+
+         <footer>
+             <p>&copy; Consumer Hair Reviews Inc 2014</p>
+         </footer>
+     </div> <!-- /container -->
+
+ {% endblock %}

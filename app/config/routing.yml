@@ -1,3 +1,9 @@
+chr_alpha:
+    resource: "@ChrAlphaBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+
