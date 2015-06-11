@@ -19,3 +19,25 @@ topratedhair:
     path: /shop/hair/topratedhair/{hairtype}
     defaults: {_controller: ChrAlphaBundle:Browse:topratedhair }
 
+overviewfeatured:
+    path: /admin/overview
+    defaults: {_controller: ChrAlphaBundle:Featured:overview }
+
+viewfeatured:
+    path: /admin/viewfeatured/{hairtype}/{inch}/{style}
+    defaults: {_controller: ChrAlphaBundle:Featured:index }
+
+createfeatured:
+    path: /admin/addfeatured/{hairtype}
+    defaults: {_controller: ChrAlphaBundle:Featured:add }
+
+viewfeaturedbyinch:
+    path: /admin/viewfeatured/{hairtype}/{inch}
+    defaults: {_controller: ChrAlphaBundle:Featured:indexbyinch }
+
+viewfeaturedbyinchandstyle:
+    path: /admin/viewfeatured/{hairtype}/{inch}/{style}
+    defaults: {_controller: ChrAlphaBundle:Featured:indexbyinchandstyle }
+
+
+

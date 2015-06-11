@@ -22,15 +22,19 @@
      <!-- Main jumbotron for a primary marketing message or call to action -->
 
      <div class="container">
-         <div class="jumbotron">
+         <div class="well well-sm"><h2>Shop {{ hairtype | capitalize }} {{ inch }} Inch Hair</h2>
+             <p><small>100% Virgin {{ hairtype | capitalize }} {{ inch }} Inch Human Hair </small></p>
+         </div>
              <div class="row">
                  <div class="col-md-12">
-                     <h2>Shop {{ hairtype | capitalize }} {{ inch }} Inch Hair</h2>
-                    <p><small>100% Virgin {{ hairtype | capitalize }} {{ inch }} Inch Human Hair </small></p>
-
+                     <ol class="breadcrumb">
+                         <li><a href="/">Home</a></li>
+                         <li><a href="#">All Hair Categories</a></li>
+                         <li class="active">{{ hairtype | capitalize }} {{ inch }} Inch Human Hair </li>
+                     </ol>
                  </div>
              </div>
-         </div>
+
 
          <div class="row">
              <div class="col-md-9">

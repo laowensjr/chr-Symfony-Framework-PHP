@@ -9,7 +9,10 @@
     {% block stylesheets %}
     <!-- Bootstrap -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
+        <link href="{{ asset('css/full.css') }}" rel="stylesheet">
     {% endblock %}
+
+
 
     {% stylesheets 'bundles/chralpha/css/*' filter='cssrewrite' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
@@ -26,12 +29,51 @@
 {% block javascripts %}
     <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
     <script src="{{ asset('js/jquery.js') }}"></script>
+
+
+
     <script>
-        $(function(){
-            $('.fadein img:gt(0)').hide();
-            setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 8000);
+        $(document).ready(function(){
+            $("#clickHairChoice").click(function(){
+                $("#hairChoiceForm").toggle( "slow", function() {
+                    // Animation complete.
+                });
+            });
+
+            $("#clickInchStyleChoice").click(function(){
+                $("#inchStyleChoiceForm").toggle( "slow", function() {
+                    // Animation complete.
+                });
+            });
+
+            $("#clickUploadPicture").click(function(){
+                $("#uploadPictureForm").toggle( "slow", function() {
+                    // Animation complete.
+                });
+            });
+
+            $("#clickItemDetails").click(function(){
+                $("#itemDetailsForm").toggle( "slow", function() {
+                    // Animation complete.
+                });
+            });
+
+            $("#clickAdPosition").click(function(){
+                $("#adPositionForm").toggle( "slow", function() {
+                    // Animation complete.
+                });
+            });
+
+            $("#clickReviewAd").click(function(){
+                $("#reviewAdForm").toggle( "slow", function() {
+                    // Animation complete.
+                });
+            });
+
         });
     </script>
+
+
     <!-- Include all JavaScripts, compiled by Assetic -->
     <script src="{{ asset('js/bootstrap.js') }}"></script>
 {% endblock %}

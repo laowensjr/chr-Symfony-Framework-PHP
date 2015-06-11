@@ -5,52 +5,63 @@
 
  {% block body %}
 
-     <nav class="navbar">
-         <div class="container">
-             <div class="navbar-header">
-                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="#">{% image '@ChrAlphaBundle/Resources/public/images/logo.jpg' %}
-                     <img alt="Brand" src="{{ asset_url }}">
-                     {% endimage %}</a>
-             </div>
-             <div id="navbar" class="navbar-collapse collapse">
-                 <form class="navbar-form navbar-right">
-                     <div class="form-group">
-                         <input type="text" placeholder="Email" class="form-control">
-                     </div>
-                     <div class="form-group">
-                         <input type="password" placeholder="Password" class="form-control">
-                     </div>
-                     <button type="submit" class="btn btn-primary">Sign in</button><br />
-                     <small><a href="">Don't have an Account, <b>Register for Free!</b></a></small>
 
-                 </form>
-             </div><!--/.navbar-collapse -->
-         </div>
-     </nav>
      <!-- Main jumbotron for a primary marketing message or call to action -->
-     <div class="jumbotron">
-         <div class="container">
-             <div class="fadein" align="center">
-                 <a href="#">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined.jpg' %}
-                     <img alt="Service Locator" src="{{ asset_url }}">
-                     {% endimage %}</a>
-                 <a href="#">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined2.jpg' %}
-                     <img alt="Service Locator" src="{{ asset_url }}">
-                     {% endimage %}</a>
-                 <a href="#">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined3.jpg' %}
-                     <img alt="Service Locator" src="{{ asset_url }}">
-                     {% endimage %}</a>
-
-             </div>
+    <h5 class="text-center">The #1 Trusted Hair Reviews Website, with over 10 million licensed professionals Worldwide that are listed in our Database</h5>
+     <div class="well">
+     <div class="container">
+     <div class="row">
+     <div class="col-md-6">
+         <a class="navbar-brand" href="#">{% image '@ChrAlphaBundle/Resources/public/images/logoPNG.png' %}
+             <img class="img-responsive" alt="Brand" src="{{ asset_url }}">
+             {% endimage %}</a>
          </div>
+     <div class="col-md-6">
+         <form class="form-inline">
+             <div class="form-group">
+                 <input type="text" placeholder="Email" class="form-control">
+             </div>
+             <div class="form-group">
+                 <input type="password" placeholder="Password" class="form-control">
+             </div>
+             <button type="submit" class="btn btn-primary">Sign in</button><br/>
+             <small><a href="">Don't have an Account, <b>Join for Free!</b></a>&nbsp;If you're a Cosmetologist Student <b><a href="">Click Here</a></b></small>
+
+         </form>
+     </div>
+     </div>
+     </div>
      </div>
 
+     <div class="jumbotron">
+         <div class="container">
+
+             <h1>Find State Licensed Stylist & Barbers in your Area!</h1>
+             <p>We only List & Review ACTIVE, STATE LICENSED Professionals, the other websites list anyone</p>
+             <p><a class="btn btn-warning btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+         </div>
+     </div>
+     <div class="well">
+         <div class="container">
+     <div class="row">
+         <div class="col-md-6" align="center">
+              <a href="THE_SERVICES_LOCATOR_URL">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined1Split2.jpg' %}
+                     <img class="img-responsive" alt="Service Locator" src="{{ asset_url }}" >
+
+                     {% endimage %}</a>
+
+
+         </div>
+         <div class="col-md-6" align="center">
+
+                 <a href="THE_BROWSE_MAIN_HAIR">{% image '@ChrAlphaBundle/Resources/public/images/jumbotronAdCombined2Split2.jpg' %}
+                     <img class="img-responsive" alt="Shop Hair Extensions" src="{{ asset_url }}">
+                     {% endimage %}</a>
+
+             </div>
+     </div>
+     </div>
+</div>
      <div class="container">
          <!-- Example row of columns -->
          <div class="row">
@@ -90,7 +101,8 @@
                      <a href="browse/hair/eurasian">Eurasian</a>
                  </p>
 
-                 <p><a class="btn btn-default" href="#" role="button">See All Categories &raquo;</a></p>
+                 <p><a class="btn btn-default" href="#" role="button">See All Hair Categories &raquo;</a></p>
+                 <p><a class="btn btn-default" href="#" role="button">See All WIG Categories &raquo;</a></p>
 
              </div>
              <div class="col-md-3" align="center">

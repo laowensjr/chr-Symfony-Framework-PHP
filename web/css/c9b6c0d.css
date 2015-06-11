@@ -1,20 +1,12 @@
-.container .jumbotron {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.navbar-header, .navbar-brand {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
 }
-.jumbotron .container {
-    top: 0px;
-    padding-bottom: 0px;
-}
-.fadein {
-    position:relative; height:341px; width:739px; margin:0 auto;
-    background: url("../bundles/chralpha/images/jumbotronAd1.jpg") repeat-x scroll left top transparent;
 
-}
-.fadein img {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width: 739px;
-    height: 341px;
+.jumbotron
+{
+    background-image: url("../../bundles/chralpha/images/background3.jpg");
+    color: #ffffff;
+
 }

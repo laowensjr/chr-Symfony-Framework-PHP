@@ -1,0 +1,308 @@
+{# src/Chr/AlphaBundle/Resources/views/Featured/index.html.twig #}
+ {% extends '::layout.html.twig' %}
+
+{% block title %}Manage Featured Hairs on Hair Pages {% endblock %}
+
+ {% block body %}
+
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="#">Manage Featured Hairs</a>
+             </div>
+             <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#">Dashboard</a></li>
+                     <li><a href="#">Settings</a></li>
+                     <li><a href="#">Profile</a></li>
+                     <li><a href="#">Help</a></li>
+                 </ul>
+                 <form class="navbar-form navbar-right">
+                     <input type="text" class="form-control" placeholder="Search...">
+                 </form>
+             </div>
+         </div>
+     </nav>
+
+     <div class="container-fluid">
+         <div class="row">
+             <br/><br/><br/>
+             <div class="col-sm-3 col-md-2 sidebar">
+                 <ul class="nav nav-sidebar">
+                     <li class="active"><a href="/admin/overview">Overview <span class="sr-only">(current)</span></a></li>
+
+                     <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/malaysian/12/straight">Malaysian<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/malaysian/12/straight">View Featured</a></li>
+                             <li><a href="/admin/addfeatured/malaysian">Create Featured</a></li>
+
+                         </ul>
+                     </li>
+
+                     <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/brazilian/12/straight">Brazilian<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/brazilian/12/straight">View Featured</a></li>
+                             <li><a href="/admin/addfeatured/brazilian">Create Featured</a></li>
+                         </ul>
+                     </li>
+
+                     <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/peruvian/12/straight">Peruvian<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/peruvian/12/straight">View Featured</a></li>
+                             <li><a href="/admin/addfeatured/peruvian">Create Featured</a></li>
+                         </ul>
+                     </li>
+
+                     <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/eurasian/12/straight">Eurasian<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/eurasian/12/straight">View Featured</a></li>
+                             <li><a href="/admin/addfeatured/eurasian">Create Featured</a></li>
+                         </ul>
+                     </li>
+
+                 </ul>
+
+             </div>
+             <div class="col-sm-9 col-md-10 main">
+                 <h1 class="page-header">Dashboard: {{ hairtype | capitalize }} Hair</h1>
+<p><b>Select the Inch and Style.</b></p>
+                 <ul class="nav nav-tabs">
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/12/straight">12 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/12/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/12/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/12/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/14/straight">14 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/14/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/14/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/14/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/16/straight">16 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/16/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/16/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/16/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/18/straight">18 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/18/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/18/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/18/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/20/straight">20 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/20/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/20/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/20/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/22/straight">22 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/22/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/22/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/22/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/24/straight">24 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/24/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/24/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/24/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/26/straight">26 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/26/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/26/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/26/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/28/straight">28 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/28/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/28/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/28/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/admin/viewfeatured/{{ hairtype }}/30/straight">30 Inch</a><span class="caret"></span>
+                         <ul class="dropdown-menu">
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/30/straight">Straight</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/30/wavy">Wavy</a></li>
+                             <li><a href="/admin/viewfeatured/{{ hairtype }}/30/curly">Curly</a></li>
+                         </ul>
+
+                     </li>
+
+
+                 </ul>
+
+<br/>
+<h3>Results:</h3>
+                 <h4 class="sub-header">{{ hairtype | capitalize }} {{ inch }} Inch {{ style | capitalize }} Hair</h4>
+                 <div class="table-responsive">
+                     <table class="table table-striped">
+                         <thead>
+                         <tr>
+                             <th>#</th>
+                             <th>Header</th>
+                             <th>Header</th>
+                             <th>Header</th>
+                             <th>Header</th>
+                         </tr>
+                         </thead>
+                         <tbody>
+                         <tr>
+                             <td>1,001</td>
+                             <td>Lorem</td>
+                             <td>ipsum</td>
+                             <td>dolor</td>
+                             <td>sit</td>
+                         </tr>
+                         <tr>
+                             <td>1,002</td>
+                             <td>amet</td>
+                             <td>consectetur</td>
+                             <td>adipiscing</td>
+                             <td>elit</td>
+                         </tr>
+                         <tr>
+                             <td>1,003</td>
+                             <td>Integer</td>
+                             <td>nec</td>
+                             <td>odio</td>
+                             <td>Praesent</td>
+                         </tr>
+                         <tr>
+                             <td>1,003</td>
+                             <td>libero</td>
+                             <td>Sed</td>
+                             <td>cursus</td>
+                             <td>ante</td>
+                         </tr>
+                         <tr>
+                             <td>1,004</td>
+                             <td>dapibus</td>
+                             <td>diam</td>
+                             <td>Sed</td>
+                             <td>nisi</td>
+                         </tr>
+                         <tr>
+                             <td>1,005</td>
+                             <td>Nulla</td>
+                             <td>quis</td>
+                             <td>sem</td>
+                             <td>at</td>
+                         </tr>
+                         <tr>
+                             <td>1,006</td>
+                             <td>nibh</td>
+                             <td>elementum</td>
+                             <td>imperdiet</td>
+                             <td>Duis</td>
+                         </tr>
+                         <tr>
+                             <td>1,007</td>
+                             <td>sagittis</td>
+                             <td>ipsum</td>
+                             <td>Praesent</td>
+                             <td>mauris</td>
+                         </tr>
+                         <tr>
+                             <td>1,008</td>
+                             <td>Fusce</td>
+                             <td>nec</td>
+                             <td>tellus</td>
+                             <td>sed</td>
+                         </tr>
+                         <tr>
+                             <td>1,009</td>
+                             <td>augue</td>
+                             <td>semper</td>
+                             <td>porta</td>
+                             <td>Mauris</td>
+                         </tr>
+                         <tr>
+                             <td>1,010</td>
+                             <td>massa</td>
+                             <td>Vestibulum</td>
+                             <td>lacinia</td>
+                             <td>arcu</td>
+                         </tr>
+                         <tr>
+                             <td>1,011</td>
+                             <td>eget</td>
+                             <td>nulla</td>
+                             <td>Class</td>
+                             <td>aptent</td>
+                         </tr>
+                         <tr>
+                             <td>1,012</td>
+                             <td>taciti</td>
+                             <td>sociosqu</td>
+                             <td>ad</td>
+                             <td>litora</td>
+                         </tr>
+                         <tr>
+                             <td>1,013</td>
+                             <td>torquent</td>
+                             <td>per</td>
+                             <td>conubia</td>
+                             <td>nostra</td>
+                         </tr>
+                         <tr>
+                             <td>1,014</td>
+                             <td>per</td>
+                             <td>inceptos</td>
+                             <td>himenaeos</td>
+                             <td>Curabitur</td>
+                         </tr>
+                         <tr>
+                             <td>1,015</td>
+                             <td>sodales</td>
+                             <td>ligula</td>
+                             <td>in</td>
+                             <td>libero</td>
+                         </tr>
+                         </tbody>
+                     </table>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+ {% endblock %}

@@ -2,8 +2,10 @@
 
 namespace Chr\AlphaBundle\Controller;
 
+
+// This namespace includes "use Symfony\Component\HttpFoundation\Response;" if we wanted to output response and not render
+// it to a TWIG template
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-//use Symfony\Component\HttpFoundation\Response;
 
 class BrowseController extends Controller
 {
@@ -21,7 +23,7 @@ class BrowseController extends Controller
 
     }
 
-    public function byinchAction($hairtype, $inch, $style = 'Straight, Curly, and Wavy')
+    public function byinchAction($hairtype, $inch, $style = 'Straight')
     {
         return $this->render(
             'ChrAlphaBundle:Browse:byinch.html.twig',

@@ -22,18 +22,22 @@
      <!-- Main jumbotron for a primary marketing message or call to action -->
 
          <div class="container">
-             <div class="jumbotron">
+             <div class="well well-sm"> <h3>Shop {{ hairtype | capitalize }} Hair</h3>   <p><small>100% Virgin {{ hairtype | capitalize }} Human Hair </small>
+
+                 </p></div>
      <div class="row">
          <div class="col-md-12">
-             <h2>Shop {{ hairtype | capitalize }} Hair</h2>
-             <p><small>100% Virgin {{ hairtype | capitalize }} Human Hair </small>
+             <ol class="breadcrumb">
+                 <li><a href="/">Home</a></li>
+                 <li><a href="#">See All Hair Categories</a></li>
+                 <li class="active">{{ hairtype | capitalize }} {{ inch }} Inch {{ style | capitalize }} Human Hair </li>
+             </ol>
 
-             </p>
      </div>
 
 
      </div>
-             </div>
+
              <div class="row">
                  <div class="col-md-9">
                      <p><i>100% Virgin {{ hairtype | capitalize }} Human Hair. When buying {{ hairtype | capitalize }} Hair its important that you
