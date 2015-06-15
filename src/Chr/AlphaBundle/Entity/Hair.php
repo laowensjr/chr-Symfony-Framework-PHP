@@ -3,12 +3,14 @@
 namespace Chr\AlphaBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Hair
  *
  * @ORM\Table()
  * @ORM\Entity
+ * @ORM\HasLifecycleCallbacks
  */
 class Hair
 {
@@ -21,7 +23,9 @@ class Hair
      */
     private $id;
 
-    /**
+    private $temp;
+
+      /**
      * @var string
      *
      * @ORM\Column(name="hairtype", type="string", length=255)
@@ -29,9 +33,10 @@ class Hair
     private $hairtype;
 
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="inch", type="integer")
+     * @ORM\Column(name="inch", type="string", length=255)
+     *
      */
     private $inch;
 
@@ -39,27 +44,34 @@ class Hair
      * @var string
      *
      * @ORM\Column(name="style", type="string", length=255)
+     *
      */
     private $style;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="page_summary", type="string", length=255)
-     */
-    private $pageSummary;
-
-    /**
-     * @var string
+     * @Assert\Image(
+     *     minWidth = 200,
+     *     maxWidth = 243,
+     *     minHeight = 160,
+     *     maxHeight = 198,
+     *     mimeTypesMessage = "Please upload a valid JPEG File",
+     *     allowLandscape = false,
+     *     allowPortrait = false
+     * )
      *
      * @ORM\Column(name="featured_hair_pic", type="string", length=255)
+     *
      */
+
     private $featuredHairPic;
 
     /**
      * @var string
      *
      * @ORM\Column(name="featured_hair_heading", type="string", length=255)
+     *
      */
     private $featuredHairHeading;
 
@@ -67,6 +79,7 @@ class Hair
      * @var string
      *
      * @ORM\Column(name="featured_hair_summary", type="string", length=255)
+     *
      */
     private $featuredHairSummary;
 
@@ -74,6 +87,7 @@ class Hair
      * @var string
      *
      * @ORM\Column(name="featured_hair_price", type="decimal", scale=2)
+     *
      */
     private $featuredHairPrice;
 
@@ -81,6 +95,7 @@ class Hair
      * @var string
      *
      * @ORM\Column(name="featured_hair_vendor", type="string", length=255)
+     *
      */
     private $featuredHairVendor;
 
@@ -88,6 +103,7 @@ class Hair
      * @var string
      *
      * @ORM\Column(name="featured_hair_position", type="string", length=255)
+     *
      */
     private $featuredHairPosition;
 
@@ -173,46 +189,24 @@ class Hair
         return $this->style;
     }
 
-    /**
-     * Set pageSummary
-     *
-     * @param string $pageSummary
-     * @return Hair
-     */
-    public function setPageSummary($pageSummary)
-    {
-        $this->pageSummary = $pageSummary;
-
-        return $this;
-    }
-
-    /**
-     * Get pageSummary
-     *
-     * @return string 
-     */
-    public function getPageSummary()
-    {
-        return $this->pageSummary;
-    }
 
     /**
      * Set featuredHairPic
      *
-     * @param string $featuredHairPic
-     * @return Hair
+     * @param UploadedFile $featuredHairPic
+     *
      */
-    public function setFeaturedHairPic($featuredHairPic)
+    public function setFeaturedHairPic(UploadedFile $featuredHairPic = null)
     {
         $this->featuredHairPic = $featuredHairPic;
 
-        return $this;
     }
+
 
     /**
      * Get featuredHairPic
      *
-     * @return string 
+     * @return UploadedFile
      */
     public function getFeaturedHairPic()
     {
@@ -335,4 +329,9 @@ class Hair
     }
 
 
+
+
+
+
 }
+

@@ -1,7 +1,11 @@
-{# app/Resources/views/layout.html.twig #}
+{# app/Resources/views/layout2.html.twig #}
 <!DOCTYPE html>
 <html>
 <head>
+
+    {% block head %}
+
+    {% endblock %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Bootstrap 101 Template{% endblock %}</title>
@@ -14,10 +18,9 @@
 
 
 
-    {% stylesheets 'bundles/chralpha/css/custom.css' filter='cssrewrite' %}
+    {% stylesheets 'bundles/chralpha/css/custom2.css' filter='cssrewrite' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
-
 
 
     <!-- HTML5 Shim and Respond.js add IE8 support of HTML5 elements and media queries -->
@@ -65,12 +68,11 @@
                 });
             });
 
-            $("#clickHairVendor").click(function(){
-                $("#hairVendorForm").toggle( "slow", function() {
+            $("#clickReviewAd").click(function(){
+                $("#reviewAdForm").toggle( "slow", function() {
                     // Animation complete.
                 });
             });
-
 
         });
     </script>

@@ -1,13 +1,17 @@
 {# src/Chr/AlphaBundle/Resources/views/Homepage/index.html.twig #}
- {% extends '::layout.html.twig' %}
+ {% extends '::layout2.html.twig' %}
 
 {% block title %}Consumer Hair Reviews{% endblock %}
+
+
+
 
  {% block body %}
 
 
      <!-- Main jumbotron for a primary marketing message or call to action -->
-    <h5 class="text-center">The #1 Trusted Hair Reviews Website, with over 10 million licensed professionals Worldwide that are listed in our Database</h5>
+        <h5 class="text-center"><b>The #1 Trusted Hair Reviews Website, with over 55 million records</b> </h5>
+
      <div class="well">
      <div class="container">
      <div class="row">
@@ -16,6 +20,7 @@
              <img class="img-responsive" alt="Brand" src="{{ asset_url }}">
              {% endimage %}</a>
          </div>
+
      <div class="col-md-6">
          <form class="form-inline">
              <div class="form-group">
@@ -25,13 +30,17 @@
                  <input type="password" placeholder="Password" class="form-control">
              </div>
              <button type="submit" class="btn btn-primary">Sign in</button><br/>
-             <small><a href="">Don't have an Account, <b>Join for Free!</b></a>&nbsp;If you're a Cosmetologist Student <b><a href="">Click Here</a></b></small>
+             <small><a href="">Don't have an Account, <b>Join for Free!</b></a>&nbsp;-OR-<span class="text-primary">-OR- &nbsp;If you're a Cosmetologist Student</span> <b><a href="">Click Here</a></b></small>
 
          </form>
      </div>
      </div>
      </div>
      </div>
+
+     </div>
+     </div>
+
 
      <div class="jumbotron">
          <div class="container">

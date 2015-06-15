@@ -1,0 +1,34 @@
+{# src/Chr/AlphaBundle/Resources/views/Featured/index.html.twig #}
+ {% extends '::layout.html.twig' %}
+
+{% block title %}Manage Featured Hairs on Hair Pages {% endblock %}
+
+ {% block body %}
+
+<div class="well well-lg"><b>Successfully Updated. Click OK to return to your Dashboard</b>
+    <p><a class="btn btn-warning btn-lg" href="/admin/overview" role="button">OK &raquo;</a></p>
+</div>
+     <div class="container">
+         <div class="row">
+             <div class="col-md-12">
+
+                 <a href="#">{% image '@ChrAlphaBundle/Resources/public/images/logoPNG.png' %}
+                     <img class="img-responsive" alt="Consumer Hair Reviews" src="{{ asset_url }}">
+                     {% endimage %}</a>
+             </div>
+
+
+
+
+         </div>
+
+
+
+
+
+     </div>
+
+
+
+
+ {% endblock %}

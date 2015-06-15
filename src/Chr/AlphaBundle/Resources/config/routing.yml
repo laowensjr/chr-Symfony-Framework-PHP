@@ -39,5 +39,9 @@ viewfeaturedbyinchandstyle:
     path: /admin/viewfeatured/{hairtype}/{inch}/{style}
     defaults: {_controller: ChrAlphaBundle:Featured:indexbyinchandstyle }
 
+hairsuccess:
+    path: /admin/addfeatured/{hairtype}/success
+    defaults: {_controller: ChrAlphaBundle:Featured:success }
+
 
 
