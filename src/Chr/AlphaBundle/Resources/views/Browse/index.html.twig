@@ -6,14 +6,30 @@
  {% block body %}
 
      <div class="container">
-     <div class="header clearfix">
-         <nav>
-             <ul class="nav nav-pills pull-right">
-                 <li role="presentation" class="active"><a href="/">Home</a></li>
-                 <li role="presentation"><a href="#">About</a></li>
-                 <li role="presentation"><a href="#">Contact</a></li>
+     <div class="collapse navbar-collapse" id="topmenubar1">
+         <ul class="nav navbar-nav">
+             <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+
+             <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                     <li><a href="#">Our Hair</a></li>
+                     <li><a href="#">Our Hair Products</a></li>
+                     <li><a href="#">Our Company</a></li>
+                 </ul>
+             </li>
+             <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Business <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                     <li><a href="#">Partner With Us</a></li>
+                     <li role="separator" class="divider"></li>
+                     <li><a href="#">List Your Ad</a></li>
+                 </ul>
+             </li>
+
+             <li><a href="#">Contact Us</a></li>
              </ul>
-         </nav>
+         </div>
          <a class="navbar-brand" href="/">{% image '@ChrAlphaBundle/Resources/public/images/logo.jpg' %}
              <img alt="Brand" src="{{ asset_url }}">
              {% endimage %}</a>

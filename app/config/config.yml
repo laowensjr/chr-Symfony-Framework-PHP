@@ -38,12 +38,13 @@ assetic:
     bundles: [ChrAlphaBundle]
     filters:
         less:
-           node: "C:/Program Files (x86)/nodejs/node.exe"
-           node_paths: ["C:/Users/Owens/AppData/npm/node_modules"]
+           node: "C:/Program Files/nodejs/node.exe"
+           node_paths: ["C:/Program Files/nodejs/node_modules/npm/node_modules"]
+
            apply_to:   "\.less$"
         cssrewrite: ~
 braincrafted_bootstrap:
-    less_filter: less
+    css_preprocessor: less
 
 # Doctrine Configuration
 doctrine:
